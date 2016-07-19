@@ -6,8 +6,8 @@ X86 Compiler written for Programming Languages class
 ###Compiler
 - Optimizing Cool compiler
 - Targets X86 instruction architecture
-- Takes an annotated abstract syntax tree as input and produces an x86 file, which can then be linked into an executable
-- Written Python 2.7
+- Takes an annotated abstract syntax tree as input and produces an x86 file, which can then be linked into an executable file
+- Written in Python 2.7
 
 ###Using the compiler
 1. Use the provided cool interpreter to generate an AST from one the cool test cases (.cl files), this can be done with <code>$ ./cool test1.cl --type</code> and will generate a test1.cl-type file
