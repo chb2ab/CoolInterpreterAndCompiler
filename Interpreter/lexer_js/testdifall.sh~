@@ -1,0 +1,105 @@
+#!/bin/bash  
+
+echo "JS"
+node main.js tests/arith.cl
+mv arith.cl"-lex" "nodelex"
+echo "lexer"
+./cool --lex tests/arith.cl
+mv arith.cl"-lex" "coollex"
+diff -b -B -E -w "nodelex" "coollex"
+
+echo "JS"
+node main.js tests/unsort-cool.cl
+mv unsort-cool.cl"-lex" "nodelex"
+echo "lexer"
+./cool --lex tests/unsort-cool.cl
+mv unsort-cool.cl"-lex" "coollex"
+diff -b -B -E -w "nodelex" "coollex"
+
+echo "JS"
+node main.js tests/test.cl
+mv test.cl"-lex" "nodelex"
+echo "lexer"
+./cool --lex tests/test.cl
+mv test.cl"-lex" "coollex"
+diff -b -B -E -w "nodelex" "coollex"
+
+echo "JS"
+node main.js tests/sort-list.cl
+mv sort-list.cl"-lex" "nodelex"
+echo "lexer"
+./cool --lex tests/sort-list.cl
+mv sort-list.cl"-lex" "coollex"
+diff -b -B -E -w "nodelex" "coollex"
+
+echo "JS"
+node main.js tests/rosetta.cl
+mv rosetta.cl"-lex" "nodelex"
+echo "lexer"
+./cool --lex tests/rosetta.cl
+mv rosetta.cl"-lex" "coollex"
+diff -b -B -E -w "nodelex" "coollex"
+
+echo "JS"
+node main.js tests/print-cool.cl
+mv print-cool.cl"-lex" "nodelex"
+echo "lexer"
+./cool --lex tests/print-cool.cl
+mv print-cool.cl"-lex" "coollex"
+diff -b -B -E -w "nodelex" "coollex"
+
+echo "JS"
+node main.js tests/primes.cl
+mv primes.cl"-lex" "nodelex"
+echo "lexer"
+./cool --lex tests/primes.cl
+mv primes.cl"-lex" "coollex"
+diff -b -B -E -w "nodelex" "coollex"
+
+echo "JS"
+node main.js tests/new-complex.cl
+mv new-complex.cl"-lex" "nodelex"
+echo "lexer"
+./cool --lex tests/new-complex.cl
+mv new-complex.cl"-lex" "coollex"
+diff -b -B -E -w "nodelex" "coollex"
+
+echo "JS"
+node main.js tests/list.cl
+mv list.cl"-lex" "nodelex"
+echo "lexer"
+./cool --lex tests/list.cl
+mv list.cl"-lex" "coollex"
+diff -b -B -E -w "nodelex" "coollex"
+
+echo "JS"
+node main.js tests/atoi.cl
+mv atoi.cl"-lex" "nodelex"
+echo "lexer"
+./cool --lex tests/atoi.cl
+mv atoi.cl"-lex" "coollex"
+diff -b -B -E -w "nodelex" "coollex"
+
+echo "JS"
+node main.js tests/cells.cl
+mv cells.cl"-lex" "nodelex"
+echo "lexer"
+./cool --lex tests/cells.cl
+mv cells.cl"-lex" "coollex"
+diff -b -B -E -w "nodelex" "coollex"
+
+echo "JS"
+node main.js tests/hello-world.cl
+mv hello-world.cl"-lex" "nodelex"
+echo "lexer"
+./cool --lex tests/hello-world.cl
+mv hello-world.cl"-lex" "coollex"
+diff -b -B -E -w "nodelex" "coollex"
+
+echo "JS"
+node main.js tests/hs.cl
+mv hs.cl"-lex" "nodelex"
+echo "lexer"
+./cool --lex tests/hs.cl
+mv hs.cl"-lex" "coollex"
+diff -b -B -E -w "nodelex" "coollex"

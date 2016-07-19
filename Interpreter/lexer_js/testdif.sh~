@@ -1,0 +1,10 @@
+#!/bin/bash  
+
+echo "JS"
+node main.js tests/$1
+mv $1"-lex" "nodelex"
+echo "lexer"
+./cool --lex tests/$1
+mv $1"-lex" "coollex"
+$2 -b -B -E -w "nodelex" "coollex"
+
